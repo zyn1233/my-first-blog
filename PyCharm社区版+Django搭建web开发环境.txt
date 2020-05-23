@@ -1,0 +1,32 @@
+1. 创建项目：在命令行下输入：django-admin startproject (项目名)        （cmd命令先进入需要创建目录的路径）
+2. 导入项目：打开Pycharm，open，选择刚才创建的项目
+3. 创建应用：在命令行下输入：python manage.py startapp (应用名)      （cmd命令下先进入项目名所在的目录）
+4. 查看目录：应该有项目和应用2个文件夹
+5. 启动服务：在命令行下输入：python manage.py runserver     （命令下先进入项目名所在的目录）
+6. 服务运行起来之后，可以在浏览器输入默认的访问地址127.0.0.1:8000
+
+
+# 模板html的各个涵意
+
+    这就像把东西放进盒子里。 你有一个大箱子里， <html></html> ；在它里面还有 <body></body> ，并包含更小盒： <p></p> .
+
+    # 最基本的标记：
+        <html> ，始终是任何网页的开始，</html> 始终是最后。
+        正如你所看到的，整个网站的内容是在 <html> 开始标记和结束标记之间 </html> 的
+        <p> 一种用于段落元素标记 ； </p> 关闭每个段落
+
+    # 每个 HTML 页面也分为两个元素： head 和 body .
+        head 是一个包含有关文档且未显示在屏幕上的信息元素。
+        body 是包含 web 页中所有显示的元素。
+        我们使用 <head> 告诉浏览器这个页面的配置，以及 <body> 来告诉它什么实际上是在页面上。
+
+
+        <h1>A heading</h1> -为你最重要的标题
+        <h2>A sub-heading</h2> 为下一层级的标题！
+        <h3>A sub-sub-heading</h3> ... 同样，直到 <h6>
+        <em>text</em> 强调您的文本
+        <strong>text</strong> 强烈强调您的文本
+        <br /> 跳转到下一行（你不能放任何东西在br里面）
+        <a href="https://djangogirls.org">link</a> 创建一个链接
+        <ul><li>first item</li><li>second item</li></ul> 产生一个列表，就像这样！
+        <div></div> 定义页面上的一个段
