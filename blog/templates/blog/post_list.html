@@ -8,16 +8,12 @@
             <h1><a href="">这是我个人的博客</a></h1>
         </div>
 
-        <div>
-            <p>发表于: 2020.05.23  21:16</p>
-            <h2><a href="">这是第一篇测试文章</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>发表于: 2020.05.23  21:18</p>
-            <h2><a href="">这是第二个测试帖子</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
