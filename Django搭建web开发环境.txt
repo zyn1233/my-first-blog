@@ -59,7 +59,7 @@
         5、要检查是否有效吗？
             >>> Post.objects.all()
                 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
-        就是这样，又一个文章在列表里面！
+            就是这样，又一个文章在列表里面！
     五、筛选对象
         QuerySets的很大一部分功能是对它们进行筛选。譬如，我们想要发现所有都由用户ola编写的文章。
         我们将使用 filter ，而不是 all 在 Post.objects.all() 。 我们需要在括号中申明哪些条件，以在我们的 queryset 结果集中包含一篇博客文章。
@@ -78,6 +78,7 @@
             >>> from django.utils import timezone
             >>> Post.objects.filter(published_date__lte=timezone.now())
                 []
+    六、发布文章
         # 不幸的是，通过Python终端添加的文章还没发布。我们可以改变它！首先获取一个我们想要发布的文章实例：
             >>> post = Post.objects.get(title="Sample title")
         然后将它与我们 publish 的方法一起发布 ！
