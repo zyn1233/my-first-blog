@@ -6,14 +6,17 @@
     5. 启动服务：在命令行下输入：python manage.py runserver     （命令下先进入项目名所在的目录）
     6. 服务运行起来之后，可以在浏览器输入默认的访问地址127.0.0.1:8000
 
-# PythonAnywhere操作
+# PythonAnywhere操作（新环境）
     $ cd my-first-blog      # 切换到虚拟环境目录
-    $ git pull      # 把github代码下载下来
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull      # 把github代码下载下来
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+    最后，跳到 Web 标签页 并点击 重新载入
 
 # 模板html的各个涵意
-
     这就像把东西放进盒子里。 你有一个大箱子里， <html></html> ；在它里面还有 <body></body> ，并包含更小盒： <p></p> .
-
     # 最基本的标记：
         <html> ，始终是任何网页的开始，</html> 始终是最后。
         正如你所看到的，整个网站的内容是在 <html> 开始标记和结束标记之间 </html> 的
