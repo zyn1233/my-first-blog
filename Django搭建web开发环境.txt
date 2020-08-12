@@ -8,10 +8,11 @@
     最后，跳到 Web 标签页 并点击 重新载入
 
 # 创建Django项目
-    1. 创建项目：在命令行下输入：django-admin startproject (项目名)        （cmd命令先进入需要创建目录的路径）
+    安装Django：pip insater Django
+    1. 创建项目：在命令行下输入： django-admin startproject mysite . (项目名：mysite，注意：后面的.不要漏掉！！！成功后会有mysite目录和一个manage.py文件)        （cmd命令先进入需要创建目录的路径）
     2. 导入项目：打开Pycharm，open，选择刚才创建的项目
-    3. 创建应用：在命令行下输入：python manage.py startapp (应用名)      （cmd命令下先进入项目名所在的目录）
-    4. 查看目录：应该有项目和应用2个文件夹
+    3. 创建应用：在命令行下输入：python manage.py startapp blog  (应用名：blog)      （cmd命令下先进入项目名所在的目录）
+    4. 查看目录：应该有项目和应用2个文件夹（项目：mysite；应用：blog）
     5. 启动服务：在命令行下输入：python manage.py runserver     （命令下先进入项目名所在的目录）
     6. 服务运行起来之后，可以在浏览器输入默认的访问地址127.0.0.1:8000
 
