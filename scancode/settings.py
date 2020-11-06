@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mina_scancode',
-        'USER': 'username',  # 你的数据库用户名
-        'PASSWORD': 'password',  # 你的数据库密码
+        'USER': 'zyn1233',  # 你的数据库用户名
+        'PASSWORD': 'zhanggwg1233',  # 你的数据库密码
         'HOST': '',  # 你的数据库主机，留空默认为localhost
         'PORT': '3306',  # 你的数据库端口
     }
@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 
 TIME_ZONE = 'Asia/Shanghai'
 
